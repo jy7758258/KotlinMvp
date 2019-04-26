@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/logo"
+        android:layout_width="60dp"
+        android:id="@+id/img_logo_view"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_below="@+id/img_logo_view"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_boder"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/user"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/et_user"
+            android:inputType="number"
+            android:hint="input username"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_below="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_boder"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/password"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:hint="input password"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:inputType="numberPassword"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_below="@+id/ll_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_submit"
+        android:background="@drawable/boder_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+
+</RelativeLayout>
